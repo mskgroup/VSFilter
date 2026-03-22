@@ -74,7 +74,7 @@ jobs:
         run: |
           export VS160COMNTOOLS="C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/Tools/"
           # bash ./build_vsfilter.sh -platform "${{ matrix.vsfplat }}" -compiler VS2019
-          Run build_vsfilterbe.cmd
+          ./build_vsfilterbe.cmd
           cp License.txt bin/
 
       - name: Prune incompatible files
